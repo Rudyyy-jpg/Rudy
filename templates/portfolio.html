@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="portfolio">
+        <h1 class="text-3xl font-bold mb-8 text-center">Professional Experience</h1>
+        
+        <!-- BC Hydro Experience -->
+        <div class="timeline-item">
+            <div class="timeline-date">January 2025 - Present</div>
+            <h2 class="timeline-title">Electrical Engineering Co-op</h2>
+            <div class="timeline-company">BC Hydro - Distribution Asset Planning</div>
+            <div class="timeline-description">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Analyzed load distribution and feeder protection using CYMEdist, DAD, PQview, ArcGIS, and PowerBI</li>
+                    <li>Designed comprehensive maps using ESRI ArcGIS for transit-oriented areas in Metro Vancouver</li>
+                    <li>Assessed feeder reliability using design standards for system optimization</li>
+                </ul>
+                <div class="skills-list mt-4">
+                    <span class="skill-tag">CYMEdist</span>
+                    <span class="skill-tag">ArcGIS</span>
+                    <span class="skill-tag">PowerBI</span>
+                    <span class="skill-tag">Distribution Planning</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blueleaf Energy Experience -->
+        <div class="timeline-item">
+            <div class="timeline-date">May 2024 - August 2024</div>
+            <h2 class="timeline-title">Engineering Intern</h2>
+            <div class="timeline-company">Blueleaf Energy</div>
+            <div class="timeline-description">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Conducted solar farm modeling with PVsyst</li>
+                    <li>Supported EPC evaluations and vendor management</li>
+                    <li>Handled NDAs and financial modeling</li>
+                </ul>
+                <div class="skills-list mt-4">
+                    <span class="skill-tag">PVsyst</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Financial Modeling</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <h2 class="text-2xl font-bold mt-8 mb-4">Education</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">2022 - 2026</div>
+            <h2 class="timeline-title">Bachelor of Applied Science in Engineering</h2>
+            <div class="timeline-company">University of British Columbia</div>
+            <div class="timeline-description">
+                <p>Co-op Program in Electrical Engineering</p>
+                <div class="skills-list mt-4">
+                    <span class="skill-tag">Electrical Engineering</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">Microsoft Excel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

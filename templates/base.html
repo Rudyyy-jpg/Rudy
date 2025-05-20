@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Personal Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">My Site</a>
+            <div class="space-x-4">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="/about" class="hover:underline">About</a>
+                <a href="/case_studies" class="hover:underline">Case Studies</a>
+                <a href="/booking" class="hover:underline">Booking</a>
+                <a href="/portfolio" class="hover:underline">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto mt-8 px-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
